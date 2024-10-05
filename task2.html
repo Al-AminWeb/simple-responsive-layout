@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <style>
+        /*.container{*/
+        /*    display: grid;*/
+        /*    grid-template-columns: 1fr 2fr;*/
+        /*    gap: 10px;*/
+
+        /*}*/
+        /*p{*/
+        /*    background-color: deepskyblue;*/
+        /*    border-radius: 2px;*/
+        /*}*/
+        /*.item1{*/
+        /*    height: 100vh;*/
+        /*    width: 30vh;*/
+        /*}*/
+        /*.item2{*/
+        /*    background-color: yellow;*/
+        /*    height: 50%;*/
+        /*    width: 170vh;*/
+        /*    border: 2px solid red;*/
+        /*    grid-column: 1 / span 2;*/
+        /*}*/
+        /*.item3{*/
+        /*    grid-column: 1;*/
+        /*    display: block;*/
+        /*    background-color: darkviolet;*/
+        /*    grid-row: 2;*/
+        /*}*/
+        /*.item4{*/
+        /*    grid-column: 1;*/
+        /*    grid-row: 2;*/
+        /*    background-color: darkgreen;*/
+
+        /*}*/
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Individual item colors */
+        .item1 {
+            background-color: red;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item2 {
+            background-color: orange;
+        }
+
+        .item3 {
+            background-color: purple;
+        }
+
+        .item4 {
+            background-color: black;
+        }
+
+        /* Responsive Adjustments for Mobile */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Single column for small screens */
+            }
+
+            .grid-item {
+                grid-column: span 1 !important; /* All items span full width */
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="grid-item">
+    <div><p class="item1">1</p></div>
+    <div><p class="item2">2</p></div>
+    <div><p class="item3">3</p></div>
+    <div><p class="item4">4</p></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task4</title>
+    <style>
+        .container1{
+            display: flex;
+            flex-direction: row;
+           margin-bottom: 10px;
+            border: 5px solid red;
+        }
+        img{
+            height: 30%;
+            width: 30%;
+        }
+        .text{
+            margin-left: 10px;
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            border: 5px solid yellow;
+        }
+
+        @media screen and (max-width:576px){
+            .container1{
+                display: flex;
+                flex-direction: column;
+            }
+            img{
+                height:50vh;
+                width: 100%;
+            }
+            .container2{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container1">
+    <img src="images/food.webp" alt="">
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab at consectetur consequuntur cumque debitis deleniti dignissimos dolorem eaque eius error eum ex expedita fuga fugit harum id impedit incidunt iste iure laboriosam molestias nam natus nemo nobis officiis optio praesentium qui quis quod repellendus reprehenderit repudiandae similique vero voluptatem voluptates voluptatibus? Accusamus architecto blanditiis doloremque doloribus earum enim impedit, iure iusto mollitia nisi numquam officiis omnis placeat provident quibusdam, quod sint sit temporibus voluptas, voluptate voluptatem voluptatibus voluptatum. Animi autem blanditiis cumque dolor doloremque ducimus est expedita id ipsum iusto laboriosam libero minima quasi rem, sint tempore totam vero!</p>
+</div>
+<div class="container2">
+    <img src="images/food.webp" alt="">
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab at consectetur consequuntur cumque debitis deleniti dignissimos dolorem eaque eius error eum ex expedita fuga fugit harum id impedit incidunt iste iure laboriosam molestias nam natus nemo nobis officiis optio praesentium qui quis quod repellendus reprehenderit repudiandae similique vero voluptatem voluptates voluptatibus? Accusamus architecto blanditiis doloremque doloribus earum enim impedit, iure iusto mollitia nisi numquam officiis omnis placeat provident quibusdam, quod sint sit temporibus voluptas, voluptate voluptatem voluptatibus voluptatum. Animi autem blanditiis cumque dolor doloremque ducimus est expedita id ipsum iusto laboriosam libero minima quasi rem, sint tempore totam vero!</p>
+</div>
+</body>
+</html>
